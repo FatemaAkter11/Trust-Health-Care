@@ -5,35 +5,36 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="navbar-container">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-2 col-lg-2 col-sm-12">
-                        <div className="logo p-3">
-                            <img className="w-100" src={logo} alt="" />
-                        </div>
+        <header>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container">
+                    <div className="navbar-brand me-auto">
+                        <img className="w-25 me-5" src={logo} alt="" />
                     </div>
-                    <div className="col-md-10 col-lg-10 col-sm-12 mt-4">
-                        <div className="menu-container me-5">
-                            <ul className="d-flex align-items-end justify-content-end">
-                                <Link to="/home" className="items">
-                                    <li>Home</li>
-                                </Link>
-                                <Link to="/about" className="items">
-                                    <li>About</li>
-                                </Link>
-                                <Link to="/services" className="items">
-                                    <li>Services</li>
-                                </Link>
-                                <Link to="/blog" className="items">
-                                    <li>Blog</li>
-                                </Link>
-                            </ul>
-                        </div>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav items ms-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/services">Services</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/patient">patient-Resources</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/kids">TrustCare-Kids</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+            </nav>
+        </header>
     );
 };
 
