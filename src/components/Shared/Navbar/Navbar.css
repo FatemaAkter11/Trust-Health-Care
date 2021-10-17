@@ -1,0 +1,15 @@
+.items {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+    margin-right: 30px;
+  }
+  .items:hover {
+    color: blue;
+  }
+  .navbar-container {
+    background-color: rgba(230, 220, 220, 0.438);
+  }
