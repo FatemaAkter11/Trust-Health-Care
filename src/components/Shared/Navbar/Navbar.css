@@ -4,3 +4,6 @@
     cursor: pointer;
     color: black;
   }
+  .nav-img img{
+    margin-left: -180px;
+  }

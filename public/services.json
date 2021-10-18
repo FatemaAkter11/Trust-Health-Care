@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/B2nF497/digital-x-ray.jpg",
+        "title": "Digital X-Rays",
+        "description": "Our urgent care services are designed to give our patients the highest level of care. All of our clinics are outfitted with state-of-the-art digital X-ray services to improve the quality of images, process results quicker and provide more accurate diagnostics.",
+        "rating": 4.5,
+        "ratingCount": "350"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/HtW8VH0/allergy.jpg",
+        "title": "Allergy Testing and Treatment",
+        "description": "Allergy symptoms can range from mildly annoying to severe. TrustCare offers allergy testing for those who suffer from environmental/seasonal and food allergies.",
+        "rating": 4.5,
+        "ratingCount": "460"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/bbMYSPK/vaccine.jpg",
+        "title": "Vaccines and Immunizations",
+        "description": "Java gets executed. One such concept is Bytecode in Java.",
+        "rating": 4.0,
+        "ratingCount": "500"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/sPN4VZp/wellness.jpg",
+        "title": "Wellness Prevention",
+        "description": "Being proactive about your health is an important part of ensuring better health outcomes over the short and long term. One of the best ways to stay proactive is by participating in an annual wellness exam.",
+        "rating": 3.5,
+        "ratingCount": "500"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/mb4j95M/primary-care.png",
+        "title": "Direct Primary Care",
+        "description": "Direct Primary Care (DPC) is a modern healthcare model that makes managing your healthcare so much easier and more affordable. Instead of traditional care with co-pay, deductible and unexpected medical bills, DPC is built on a monthly subscription membership (much like a gym membership). ",
+        "rating": 4.5,
+        "ratingCount": "500"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/LYTKZrb/Telehealth.jpg",
+        "title": "Tele Health care",
+        "description": "Our telehealth visits enable you to safely have an appointment with a provider in the comfort of your home by clicking on a link to join them for a video call. Like an in-person visit, our provider can address your concerns and questions.",
+        "rating": 4.8,
+        "ratingCount": "500"
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/g9sf3M9/urgent-care.jpg",
+        "title": "Urgent Care",
+        "description": "TrustCare offers several walk-in urgent care clinic locations throughout Mississippi and Alabama. Each location has favorable hours to fit your busy schedule, open seven days a week, with no appointment needed. ",
+        "rating": 4.0,
+        "ratingCount": "500"
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/zfCYCjT/Ear-Infections.jpg",
+        "title": "Ear Infections",
+        "description": "More than 80% of young children will develop an ear infection by the time they are three years old and though the vast majority of ear",
+        "rating": 4.5,
+        "ratingCount": "350"
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/fCKgZMT/Diabetes-Warning-Signs.jpg",
+        "title": "Diabetes Warning Sign ",
+        "description": "With rates of diabetes among American adults topping 10% by some estimates, the odds that you or someone you know has diabetes are",
+        "rating": 4.8,
+        "ratingCount": "450"
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co/8XbsY7f/Kids-COVID-19-Vaccine.jpg",
+        "title": "COVID-19 Vaccine",
+        "description": "At TrustCare, we know some parents are understandably concerned about whether the COVID-19 vaccines are safe for their children.",
+        "rating": 4,
+        "ratingCount": "380"
+    }
+]

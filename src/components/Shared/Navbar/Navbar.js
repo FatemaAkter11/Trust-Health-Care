@@ -8,8 +8,8 @@ const Navbar = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
-                    <div className="navbar-brand me-auto">
-                        <img className="w-25 me-5" src={logo} alt="" />
+                    <div className="navbar-brand nav-img">
+                        <img className="w-50" src={logo} alt="" />
                     </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
