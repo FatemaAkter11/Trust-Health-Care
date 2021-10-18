@@ -1,8 +1,4 @@
-card{
-    background-color: #F3F1FF;
-    height: 360px;
-}
-.service-img{
+.img-fluid{
     border-radius: 50%; 
     width: 200px;
     height: 200px;

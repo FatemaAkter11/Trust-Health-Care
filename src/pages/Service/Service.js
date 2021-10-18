@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import './Service.css';
 
 const Service = ({ service }) => {
     const { id, img, title, description, rating, ratingCount } = service;
@@ -8,8 +9,8 @@ const Service = ({ service }) => {
     return (
         <Col sm={12} md={6} lg={4}>
             <div className="m-2">
-                <Card className="mx-auto" style={{ width: "21rem" }}>
-                    <Card.Img variant="top" className="img-fluid" src={img} />
+                <Card className="mx-auto card" style={{ width: "21rem" }}>
+                    <Card.Img variant="top" className="img-fluid mx-auto" src={img} />
                     <Card.Body className="my-1 py-1">
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>{description}</Card.Text>
