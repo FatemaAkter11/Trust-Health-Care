@@ -10,6 +10,8 @@ import Services from './pages/Services/Services';
 import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PatientResources from './pages/PatientResources/PatientResources';
+import TrustCareKids from './pages/TrustCareKids/TrustCareKids';
 
 
 function App() {
@@ -30,6 +32,12 @@ function App() {
             <Route exact path="/services">
               <Services></Services>
             </Route>
+            <Route path="/patient">
+              <PatientResources></PatientResources>
+            </Route>
+            <Route path="/kids">
+              <TrustCareKids></TrustCareKids>
+            </Route>
 
             <Route path="/login">
               <Login></Login>
@@ -38,6 +46,9 @@ function App() {
             <PrivateRoute path="/services/:id">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+
+
+
 
             <Route path="*">
               {/* <PageNotFound></PageNotFound> */}

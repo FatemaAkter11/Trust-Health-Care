@@ -26,7 +26,7 @@ const Service = ({ service }) => {
                                 }
                                 <span>{rating}</span>
                             </Col>
-                            <Col>Total review {ratingCount}</Col>
+                            <Col>Total Review: {ratingCount}</Col>
                         </Row>
                     </Card.Body>
                     <Card.Body className="d-flex">
