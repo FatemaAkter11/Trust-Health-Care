@@ -1,9 +1,5 @@
 import React from 'react';
 import './Banner.css';
-import banner1 from "../../images/banner/banner-1.jpg";
-import banner2 from "../../images/banner/banner-2.jpg";
-import banner3 from "../../images/banner/banner-3.jpg";
-import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -16,13 +12,40 @@ const Banner = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={banner1} className="slide-image d-block w-100" alt="..." />
+                        <div className="banner1 d-flex  align-items-center ">
+                            <div className="row container">
+                                <div className="col-md-8">
+                                    <h1 className="title">COVID-19 Vaccine Sign-Up</h1>
+                                    <h2 className="title-sm">Online appointments available at all Alabama locations and  <br />TrustCare Kids (MS) only.</h2>
+                                    <button className="learn-btn">Learn More</button>
+                                </div>
+                                <div className="col-md-4"></div>
+                            </div>
+                        </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={banner2} className="slide-image d-block w-100" alt="..." />
+                        <div className="banner2 d-flex  align-items-center ">
+                            <div className="row container">
+                                <div className="col-md-8">
+                                    <h1 className="title">Walk-In Flu Shots</h1>
+                                    <h2 className="title-sm">Get your flu shot today at any of our clinics! Multiple locations, <br /> convenient hours, seven days a week.</h2>
+                                    <button className="learn-btn">Learn More</button>
+                                </div>
+                                <div className="col-md-4"></div>
+                            </div>
+                        </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={banner3} className="slide-image d-block w-100" alt="..." />
+                        <div className="banner3 d-flex  align-items-center ">
+                            <div className="row container">
+                                <div className="col-md-8">
+                                    <h1 className="title">	COVID-19 Testing Clinics</h1>
+                                    <h2 className="title-sm">We are accepting appointments at our COVID-19 Testing Clinics; <br /> the clinics offer nasal swab and antibody <br /> blood tests via cash or credit only.</h2>
+                                    <button className="learn-btn">Learn More</button>
+                                </div>
+                                <div className="col-md-4"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

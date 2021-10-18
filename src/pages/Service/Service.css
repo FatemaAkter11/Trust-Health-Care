@@ -1,0 +1,9 @@
+card{
+    background-color: #F3F1FF;
+    height: 360px;
+}
+.service-img{
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+}
