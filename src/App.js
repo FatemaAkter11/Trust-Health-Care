@@ -12,6 +12,7 @@ import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import PatientResources from './pages/PatientResources/PatientResources';
 import TrustCareKids from './pages/TrustCareKids/TrustCareKids';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
 
 
             <Route path="*">
-              {/* <PageNotFound></PageNotFound> */}
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>
