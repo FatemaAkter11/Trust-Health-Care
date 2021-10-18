@@ -1,12 +1,10 @@
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCiOFEHLfgGxeX6sktGYlIyq9j6X8wILf4",
-    authDomain: "trust-care-8a9e5.firebaseapp.com",
-    projectId: "trust-care-8a9e5",
-    storageBucket: "trust-care-8a9e5.appspot.com",
-    messagingSenderId: "418711019509",
-    appId: "1:418711019509:web:c5eac4408d0a2f16d08abc"
+    apiKey: "AIzaSyAY7XRrTlXfed5CyXErS8DabjGhxkC1Gqw",
+    authDomain: "trust-health-care.firebaseapp.com",
+    projectId: "trust-health-care",
+    storageBucket: "trust-health-care.appspot.com",
+    messagingSenderId: "947880771406",
+    appId: "1:947880771406:web:5cdf16b06de1ad4c13681f"
 };
 
 export default firebaseConfig;

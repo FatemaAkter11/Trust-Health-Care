@@ -6,6 +6,10 @@ import Home from './pages/Home/Home';
 import AuthProvider from './context/AuthProvider';
 import Navbar from './components/Shared/Navbar/Navbar';
 import Footer from './components/Shared/Footer/Footer';
+import Services from './pages/Services/Services';
+import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
+import Login from './components/Login/Login';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -14,7 +18,6 @@ function App() {
       <AuthProvider>
         <Router>
           <Navbar></Navbar>
-
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -25,24 +28,16 @@ function App() {
             </Route>
 
             <Route exact path="/services">
-              {/* <Courses></Courses> */}
+              <Services></Services>
             </Route>
-
-            {/* <PrivateRoute path="/cart">
-              <Cart></Cart>
-            </PrivateRoute> */}
 
             <Route path="/login">
-              {/* <Login></Login> */}
+              <Login></Login>
             </Route>
 
-            <Route path="/signup">
-              {/* <Signup></Signup> */}
-            </Route>
-
-            <Route path="/courses/:key">
-              {/* <Details></Details> */}
-            </Route>
+            <PrivateRoute path="/services/:id">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
 
             <Route path="*">
               {/* <PageNotFound></PageNotFound> */}

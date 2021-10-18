@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../../components/Shared/Navbar/Navbar';
 import Banner from '../../components/Banner/Banner';
-import Footer from '../../components/Shared/Footer/Footer';
 import Service from '../Service/Service';
 
 const Home = () => {

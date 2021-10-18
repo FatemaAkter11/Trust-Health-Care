@@ -1,24 +1,45 @@
-import React from 'react';
-import './Service.css';
+import React from "react";
+import { Card, Col, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
-const Service = (props) => {
-    //distructuring
-    const { title, img, description } = props.service || {};
+const Service = ({ service }) => {
+    const { id, img, title, description, rating, ratingCount } = service;
+
     return (
-        <div className="col-md-4 mb-4 ms-auto">
-            <div className="card shadow-lg p-2 rounded  border border-primary" style={{ width: '22rem', height: 'h-100 d-inline-block' }}>
-                <img src={img} className="w-75 service-img mx-auto" alt="..." />
-                <div className="mt-3">
-                    <h4 className="card-title"><span className="fw-bold text-center">Service:</span> {title}</h4>
-                    <div className="text-center">
-                        <h5><span className="fw-bold"></span>{description}</h5>
-                    </div>
-                    <div className="text-center">
-                        <h5><span className="fw-bold"></span>{description.slice(0, 100)}</h5>
-                    </div>
-                </div>
+        <Col sm={12} md={6} lg={4}>
+            <div className="m-2">
+                <Card className="mx-auto" style={{ width: "21rem" }}>
+                    <Card.Img variant="top" className="img-fluid" src={img} />
+                    <Card.Body className="my-1 py-1">
+                        <Card.Title>{title}</Card.Title>
+                        <Card.Text>{description}</Card.Text>
+                    </Card.Body>
+                    <Card.Body className="my-1 py-1">
+                        <Row>
+                            <Col>
+
+                                {
+                                    <i className="far fa-star text-warning"></i>
+                                }
+                                {
+                                    <i className="fas fa-star text-warning"></i>
+                                }
+                                <span>{rating}</span>
+                            </Col>
+                            <Col>Total review {ratingCount}</Col>
+                        </Row>
+                    </Card.Body>
+                    <Card.Body className="d-flex">
+                        <NavLink
+                            to={`/services/${id}`}
+                            className="btn btn-primary w-100 me-1"
+                        >
+                            View Details
+                        </NavLink>
+                    </Card.Body>
+                </Card>
             </div>
-        </div>
+        </Col>
     );
 };
 
