@@ -10,20 +10,20 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
 
     const signInUsingGoogle = () => {
+        setIsLoading(true);
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user);
                 setUser(result.user);
             })
-            .catch(error => {
-                setError(error.message);
-            })
+            .finally(() => setIsLoading(false));
     }
     const signInUsingGithub = () => {
         signInWithPopup(auth, githubProvider)
@@ -113,19 +113,30 @@ const useFirebase = () => {
     }
 
 
-    const logout = () => {
-        signOut(auth)
-            .then(() => {
-                setUser({});
-            })
-    }
-    useEffect(() => {
+    // observe user state change
+    const unsubscribed = useEffect(() => {
         onAuthStateChanged(auth, user => {
             if (user) {
                 setUser(user);
             }
+            else {
+                setUser({})
+            }
+            setIsLoading(false);
         })
+        return () => unsubscribed;
     }, []);
+
+
+
+    const logout = () => {
+        setIsLoading(true);
+        signOut(auth)
+            .then(() => {
+                setUser({});
+            })
+            .finally(() => setIsLoading(false));
+    }
 
     return {
         user,
@@ -140,6 +151,7 @@ const useFirebase = () => {
         handleResetPassword,
         isLogin,
         error,
+        isLoading,
         logout
     }
 }
