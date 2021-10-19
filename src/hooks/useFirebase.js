@@ -150,7 +150,6 @@ const useFirebase = () => {
         handleRegistration,
         handleResetPassword,
         isLogin,
-        error,
         isLoading,
         logout
     }
